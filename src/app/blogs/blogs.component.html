@@ -1,0 +1,9 @@
+<div>
+<div  >    
+    <mat-card-title><h3>Blogs</h3></mat-card-title>
+</div>
+<div class ='atag'><a [routerLink]="" (click)="add()"><h4>Add</h4></a></div>
+    <div *ngFor ="let blog of blogs| keyvalue">
+        <app-blog [blog]='blog.value'></app-blog>
+    </div>
+</div>
